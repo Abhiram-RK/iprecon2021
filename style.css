@@ -3,7 +3,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    color: #505962;
+    color: black;
     
 }
 
@@ -14,7 +14,7 @@ body {
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
-    background: black!important;
+    background: #210F21!important;
     
     
 }
@@ -37,7 +37,7 @@ body {
     
 }
 .navbar-dark .navbar-nav .nav-link.active,.navbar-dark .navbar-nav .nav-link:hover{
-    color: skyblue;
+    color:#7D287D;
    
 }
 .home-inner{
@@ -75,16 +75,7 @@ body {
 }
 
 
-.btn-lg{
-  
-    border-width: medium;
-    border-radius: 0;
-    padding: .6rem 1.3rem;
-    font-size: 1.1rem;
-    color: black;
-    top: 50%;
-    
-}
+
 .center {
   margin: auto;
   width: 90%;
@@ -96,13 +87,46 @@ footer {
     font-weight: 700;
     font-size: .9rem;
     letter-spacing: .1rem;
-    background: black;
+    background: #210F21;
     
 }
 
 
 footer img {
     height: 4rem;
+}
+.copyright{
+ color:#7D287D;
+}
+.btn {
+  background-color:#210F21;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition: 0.3s;
+}
+.btn:hover{
+    background-color:#7D287D;
+    color:black;
+    font-size: 16px;
+}
+.btnkerala {
+    background-color:#210F21;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 16px;
+    
+    transition: 0.3s;
+  }
+  .btnkerala:hover{
+    background-color:#7D287D;
+    color:black;
+    font-size: 16px;
 }
 .map-responsive{
     overflow:hidden;
@@ -119,20 +143,20 @@ footer img {
 }
 /* imp dates*/
 .container{
-    margin-top: 2%;
-     margin-left:6%;
-   
- 
+    margin-top: 0%;
+    align-items:center ;
 }
+
 .card{
-    align-items:center;
+    align-items:left;
 }
 .card:hover{
-   box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
-   box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
-   box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
+    box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
+    box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
+    box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
 
 }
+
 
 /*============ BOOTSTRAP BREAK POINTS:
 
