@@ -12,7 +12,7 @@ body {
 .navbar {
     text-transform: uppercase;
     font-weight: 700;
-    font-size: .9rem;
+    font-size: .8rem;
     letter-spacing: .1rem;
     background: #210F21!important;
     
@@ -24,7 +24,9 @@ body {
    
     height: 2.5rem;
 }
-
+li{
+    padding-left:2em;
+}
     
 }
 
