@@ -156,7 +156,72 @@ footer img {
     box-shadow: -1px 9px 30px -12px rgba(0,0,0,0.60);
 
 }
+/*cards*/
 
+*{
+    margin: 0;
+    padding: 0;
+    
+
+}
+.cards{
+    font-size: 15px;
+    margin:0 0 30px 0;
+    text-align: center;
+    padding: 60px;
+}
+
+.dates{
+    display:flex;
+    align-items: center;
+}
+.date h2{
+    font-size: 20px;
+}
+.date{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1;
+    margin: 20px;
+    padding: 20px;
+    border:2px solid black;
+    border-radius: all .3s ease;
+}
+.date > *{
+    flex: 1 1 100%;
+}
+.date p{
+    font-size: 17px;
+}
+.date a{
+    margin: 22px 0;
+    background: #210F21;
+    color: wheat;
+    border: 1px solod #210F21;
+    padding: 5px 0;
+    border-radius: 35px;
+    transition: .3s eaes;
+}
+@media (max-width:900px){
+    .dates{
+        display: flex;
+        flex-direction: column;
+    }
+}
+.date:hover{
+    color: white;
+
+}
+.date:hover{
+    background: #210F21 ;
+}
+.date:hover a{
+    background: white;
+    color: black;
+}
+.date a:hover{
+    border-radius: 4px;
+}
 
 /*============ BOOTSTRAP BREAK POINTS:
 
