@@ -11,8 +11,8 @@ body {
 
 .navbar {
     text-transform: uppercase;
-    font-weight: 700;
-    font-size: .9rem;
+    font-weight: 20;
+    font-size: .8rem;
     letter-spacing: .1rem;
     background: #210F21!important;
     
@@ -24,7 +24,9 @@ body {
    
     height: 2.5rem;
 }
-
+li{
+    padding-left:2em;
+}
     
 }
 
@@ -222,6 +224,93 @@ footer img {
 .date a:hover{
     border-radius: 4px;
 }
+/*heading*/
+header {
+    /* align-items: center;
+    display: flex;
+    font-size: 18px;
+    height: 100vh;
+    justify-content: center;
+    overflow: hidden;
+   position: relative;
+   
+    text-align: center;
+    transform-style: preserve-3d;
+    perspective: 100px;*/
+
+
+    width: 100%;
+    max-width: 100%;
+    position: absolute ;
+    top: 25%;
+    z-index: 1;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  header:before {
+   
+    content: "";
+    position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+    z-index: -1;
+  }
+  
+ 
+  
+  .header-title, .header-subtitle {
+    color: #fff;
+  }
+  
+  .header-subtitle {
+    text-transform: uppercase;
+    margin-bottom: 5rem;
+  }
+  
+  .header-button {
+    transform: translateZ(.1px);
+    position: relative;
+    z-index: 10;
+  }
+  
+  .animate-pop-in {
+    animation: pop-in .6s ease-out forwards;
+    opacity: 0;
+  }
+  
+  .rocky-dashed {
+    animation-delay: .6s;
+  }
+  
+  .header-title {
+    animation-delay: .8s;
+  }
+  
+  .header-subtitle {
+    animation-delay: 1s;
+  }
+  
+  .header-button {
+    animation-delay: 1.1s;
+  }
+  
+  
+  /* Animations */
+  
+  @keyframes pop-in {
+    0% {
+      opacity: 0;
+      transform: translateY(-4rem) scale(.8);
+    }
+    100% {
+      opacity: 1;
+      transform: none;
+    }
+  }
+/*heading end*/  
 
 /*============ BOOTSTRAP BREAK POINTS:
 
