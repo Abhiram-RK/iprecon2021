@@ -13,68 +13,56 @@
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
-    
-     <div id="home">
-        
-          <nav class="navbar
- navbar-expand-md navbar-dark bg-dark fixed-top">
-             <a class="navbar-brand" href="index.html" ><img src="img/iprecon.png"> </a>
-             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
+  <div class="container-fit-content">
+    <div class="row">
                     
-                      <a class="nav-link" href="index.html">Home </a>
-                  </li>
-                    
-                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" >About</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="organizers.html">ORGANIZERS</a><a class="dropdown-item" role="presentation" href="venue.html">VENUE</a><a class="dropdown-item" role="presentation" href="kerala.html">KERALA</a></div>
-                        </li>
-                    
-                    <li class="nav-item">
-                    <a class="nav-link" href="committee.html">Committe</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="location.html">Location</a>
-                  </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                </ul>
-              
-             </div>
-          </nav>
-     
-      
-   
-     </div>
-    
-    <div class="landing">
-        <div class="home-wrap">
-          <div class="home-inner"> </div>
-        </div>
-       
+            <img src="img/h.jpg" style="width: 100%;">
     </div>
-             
-    <div class="caption text-center">
+</div>
+<div class="container">
 
-        <header>
-            <section class="header-content">
-              <!---<img class="rocky-dashed animate-pop-in" src="https://cssanimation.rocks/levelup/public/images/rocky-dashed.svg">--->
-              <h1 class="header-title animate-pop-in">IPRECON 2021</h1>
-              <h3 class="header-subtitle animate-pop-in">INTERNATIONAL POWER AND RENEWABLE ENERGY CONFERENCE 2021</h3>
-              <!---<p class="header-button animate-pop-in"><a href="http://courses.cssanimation.rocks/p/level-up" class="button">Get started today</a></p>--->
-            </section>
-          </header>
-      <!---a class="btn btn-outline-light btn-lg" href="#contact"><b>Join</b></a-->
-    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    
+      <!--a class="navbar-brand" href="#">IPRECON 2021</a-->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main_nav">
+        <span class="navbar-toggler-icon my-toggler"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="main_nav">
+    
+    <ul class="navbar-nav" style="column-gap: 40px;">
+        <li class="nav-item "> <a class="nav-link" href="index.html">HOME </a> </li>
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="about.html" data-toggle="dropdown"> ABOUT  </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="organizers.html"> ORGANIZATION </a></li>
+              <li><a class="dropdown-item" href="venue.html"> VENUE </a>
+              <li><a class="dropdown-item" href="kerala.html"> KERALA </a> </li>
+            </ul>
+        </li>
+        <li class="nav-item "> <a class="nav-link" href="committee.html">COMMITTEE </a> </li>
+        <li class="nav-item "> <a class="nav-link" href="#">AUTHORS </a> </li>
+        <li class="nav-item "> <a class="nav-link" href="#">SESSIONS </a> </li>
+        <li class="nav-item "> <a class="nav-link" href="#">REGISTRATION </a> </li>
+        <li class="nav-item "> <a class="nav-link" href="location.html">LOCATION </a> </li>
+        <li class="nav-item "> <a class="nav-link" href="contact.html">CONTACT </a> </li>
+        <li class="nav-item dropdown">
+            
+        </li>
+    </ul>
+    
+    
+    
+      </div> <!-- navbar-collapse.// -->
+    
+    </nav>
+</div>
+             
+    
     
     
      
     
-        <div id="about" class="offset" style="padding: 40px;padding-top: 40px;background-color: #3E0C3E;">
+        <div id="about" class="offset" style="padding: 40px;margin-top: 40px;background-color: #3E0C3E;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6" data-aos="fade-up">
@@ -231,7 +219,34 @@
     
     
     
-    
+    <script type="text/javascript">
+        /// some script
+        
+        // jquery ready start
+        $(document).ready(function() {
+            // jQuery code
+        
+            //////////////////////// Prevent closing from click inside dropdown
+            $(document).on('click', '.dropdown-menu', function (e) {
+              e.stopPropagation();
+            });
+        
+            // make it as accordion for smaller screens
+            if ($(window).width() < 992) {
+                  $('.dropdown-menu a').click(function(e){
+                      e.preventDefault();
+                    if($(this).next('.submenu').length){
+                        $(this).next('.submenu').toggle();
+                    }
+                    $('.dropdown').on('hide.bs.dropdown', function () {
+                       $(this).find('.submenu').hide();
+                    })
+                  });
+            }
+            
+        }); // jquery end
+        </script>
+        
 
 <!--- Script Source Files -->
 <script src="js/jquery-3.3.1.min.js"></script>
