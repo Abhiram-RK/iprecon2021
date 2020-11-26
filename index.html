@@ -53,6 +53,21 @@
             }
         }
 
+        .welcome{
+            background-color:rgb(255, 255, 255);
+            text-align: center;
+            
+        }
+        .typewrite{
+            color:#5E215F;
+            font-size: 30px;
+            font-weight: 700;
+            
+
+        }
+        
+}
+
  </style>
    
 </head>
@@ -103,7 +118,6 @@
 	
 	
 	
-	
   <div class="container-fit-content">
     <div class="row">
                     
@@ -149,16 +163,25 @@
 </div>
              
     
-    
+<div class="welcome"  style="padding-top: 50px;">
+        
+            <h1>
+               
+                <a href="" class="typewrite" data-period="2000" data-type='[ "Welcome to IPRECON 2021 Website!"]'  style="text-decoration: none;"></a>
+                  <span class="wrap"></span>
+               
+              </h1>
+</div>
+
     
      
     
-        <div id="about" class="offset" style="padding: 40px;margin-top: 5px;background-color: #3E0C3E;">
+        <div id="about" class="offset" style="padding: 40px;margin-top: 70px;background-color: #210F21;">
         <div class="container">
             <div class="row">
                 <div class="col-md-6" data-aos="fade-up">
-                    <h1 class="text-center" style="font-family: Montserrat, sans-serif;color: rgb(255,255,255);margin-top: 0px;font-size: 32px;">About</h1>
-                    <p class="text-justify" style="font-family: Montserrat, sans-serif;color: rgb(255,255,255);font-size: 13px;padding: 0px;padding-top: 0px;margin-top: 33px;">International Power and Renewable Energy Conference (IPRECON 2020) is an integrated crate for the young students and professionals all over the world to embed the technical quality. The conference emphasizes the international environment
+                    <h1 class="text-center" style="font-family: Montserrat, sans-serif;color: rgb(255, 255, 255);margin-top: 0px;font-size: 32px;">About</h1>
+                    <p class="text-justify" style="font-family: Montserrat, sans-serif;color: rgb(255, 255, 255);font-size: 13px;padding: 0px;padding-top: 0px;margin-top: 33px;">International Power and Renewable Energy Conference (IPRECON 2020) is an integrated crate for the young students and professionals all over the world to embed the technical quality. The conference emphasizes the international environment
                         for sharing of knowledge in our domains, connect yourself to the industrial professionals and multi disciplinary discussion on the latest advances.The conference has session from over our diverse technical committees which cover
                         the complete spectrum of industrial applications<br><br>Focus area of the conferences are Power Electronic Converters and Control Systems, Wide band gap devices, Electric machines and drives, Renewable energy Resources, Distributed generation and Grid Interconnection, Electric Vehicles, Energy Storage & Battery Charging Techniques, Power Quality issues, Microgrid & Smartgrid, Lighting technologies, Energy Policies & Standards.  The conference proceeding will be submitted to the IEEE Xplore® Digital Library.
 
@@ -213,7 +236,7 @@
      
     
     
-     <div id="location" class="offset" style="color: white;background-color: #3E0C3E; padding: 15px;margin-top: 10px;"> 
+     <div id="location" class="offset" style="color: white;background-color: #210F21; padding: 15px;margin-top: 10px;"> 
 		<div class="container"  style="margin-top: 20px;">
 			<div class="row">
 				<div class="col-md-12">
@@ -338,6 +361,69 @@
         }); // jquery end
         </script>
         
+<!--wecome-->
+     <script>
+         var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 10) || 2000;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+
+     </script>
+<!--wecome -->
+
+
 <!--loader-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
      <script>
@@ -353,7 +439,6 @@
 
 </body>
 </html>
-
 
 
 
