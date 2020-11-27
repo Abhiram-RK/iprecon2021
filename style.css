@@ -3,7 +3,7 @@
 body {
     overflow-x: hidden;
     font-family: 'Montserrat', sans-serif;
-    color: black;
+    color: rgb(61, 61, 61);
     
 }
 
@@ -33,13 +33,13 @@ li a {
 display:block;
 width:100%;
 height:50px;
-font-weight: 550;
-line-height:40px;
+font-weight: 500;
+line-height:37px;
 text-align: center;
-font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;
+font-family:'Montserrat', sans-serif;
 color: black;
 background: rgb(255, 255, 255);
-font-size: .8rem;
+font-size: .8.5rem;
 }
 
 @media (min-width: 992px){
@@ -93,7 +93,7 @@ footer img {
     height: 4rem;
 }
 .copyright{
- color:#7D287D;
+ color:#ffffff;
 }
 .btn {
   background-color:#210F21;

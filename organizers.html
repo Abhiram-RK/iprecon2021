@@ -7,9 +7,9 @@
 	<link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/fixed.css">
-    <link rel = "icon" href="img/logo1.png" type = "image/x-icon"> 
+  <link rel = "icon" href="img/logo1.png" type = "image/x-icon"> 
         
-   
+ <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive" >
@@ -30,7 +30,7 @@
       </button>
       <div class="collapse navbar-collapse" id="main_nav">
     
-    <ul class="navbar-nav" style="column-gap: 10px;">
+    <ul class="navbar-nav" style="column-gap: 5px;">
         <li class="nav-item "> <a class="nav-link" href="index.html">HOME </a> </li>
         <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="about.html" data-toggle="dropdown"> ABOUT  </a>
@@ -62,16 +62,16 @@
     
     
     
-    <h1 class="text-center" style="margin-top: 50px;margin-bottom: 50px;">About Us</h1>
+    <h1 class="text-center" style="margin-top: 50px;margin-bottom: 50px;font-size: 33px;">About Us</h1>
     <div style="margin-bottom: 41px;">
-        <div class="container">
+        <div class="container" style="padding-top:40px; ">
             <div class="row">
                
-                <div class="col-md-6">
-                    <h1 style="font-size: 20px;padding-bottom: 8px;margin-top:0px;"><strong>About College of Engineering Karungappally</strong><br></h1>
-                    <p class="text-justify" style="font-size: 14px;">The Government College of Engineering Karunagappally (CEK) is a public institute of engineering and technology in Karunagappally, in the north-west of Kollam district, Kerala, India. Established in 1999 by the Government of Kerala,
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 style="font-size: 27px;padding-bottom: 8px;margin-top:0px;padding-right: 30px;"><strong>About College of Engineering Karungappally</strong><br></h1>
+                    <p class="text-justify" style="font-size: 12px;padding-right: 25px;">The Government College of Engineering Karunagappally (CEK) is a public institute of engineering and technology in Karunagappally, in the north-west of Kollam district, Kerala, India. Established in 1999 by the Government of Kerala,
                         it is the second engineering college in Kollam district and the fourth engineering college under the aegis of the state government’s Institute of Human Resources Development in Electronics.<br></p><a href="http://ceknpy.ac.in"><button class="btn " type="button">More Info</button></a></div>
-                 <div class="col-md-6"><img src="img/cek.jpg" style="width: 100%;margin-right: 0px;margin-bottom: 36px;"></div>
+                 <div data-aos="fade-left" class="col-md-6"><img src="img/cek.jpg" style="width: 100%;margin-bottom: 36px;"></div>
                 
             </div>
         </div>
@@ -79,11 +79,11 @@
     <div>
         <div class="container" style="margin-bottom: 40px;">
             <div class="row">
-                <div class="col-md-6">
-                    <h1 style="font-size: 20px;margin-top: 0px;"><strong>About IEEE SB CEK</strong><br></h1>
-                    <p class="text-justify" style="margin-top: 15px;font-size: 14px;">IEEE Student Branch College of Engineering Karunagappally (STB 03951) is one of the oldest IEEE student branches in Kerala section, 4th branch in Travancore hub. And It is the second IEEE Student Branch in Kollam (Quilon) district.
+                <div class="col-md-6" data-aos="fade-right">
+                    <h1 style="font-size: 27px;padding-bottom: 8px;margin-top:0px;padding-right: 30px;"><strong>About IEEE SB CEK</strong><br></h1>
+                    <p class="text-justify" style="font-size: 12px;padding-right: 25px;">IEEE Student Branch College of Engineering Karunagappally (STB 03951) is one of the oldest IEEE student branches in Kerala section, 4th branch in Travancore hub. And It is the second IEEE Student Branch in Kollam (Quilon) district.
                         The group came into function on May 2001, in the early history of the institution. Student members of CEK take active participation in the IEEE meetings and workshops, earning many prizes and awards. In 2010 the group started a WIE (Women in Engineering) affinity group now has 4 technical societies.<br></p><a href="http://ieeesbcek.org"><button class="btn btn-primary" type="button" style="margin-bottom: 28px;">More Info</button></div></a>
-                <div class="col-md-6"><img src="img/ieeecek.jpg" style="width: 100%;margin-top: 0px;"></div>
+                <div data-aos="fade-left" class="col-md-6"><img src="img/ieeecek.jpg" style="width: 100%;margin-top: 0px;"></div>
             </div>
         </div>
     </div>
@@ -150,9 +150,16 @@
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 <!--- End of Script Source Files -->
 
+<!--fade-up-->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+        offset: 100, // offset (in px) from the original trigger point
+        delay: 0, // values from 0 to 3000, with step 50ms
+        duration: 1000 // values from 0 to 3000, with step 50ms
+      });
+  </script>
+
+
 </body>
 </html>
-
-
-
-
