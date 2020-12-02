@@ -78,24 +78,7 @@ font-size: .8.5rem;
   width: 90%;
   padding: 10px;
 }
-/*
-footer {
-   width: 100%;
-    font-weight: 700;
-    font-size: .9rem;
-    letter-spacing: .1rem;
-    background: #210F21;
-    
-}
 
-
-footer img {
-    height: 4rem;
-}
-.copyright{
- color:#ffffff;
-}
-*/
 .btn {
   background-color:#210F21;
   border: none;
@@ -281,17 +264,7 @@ footer p{
     color: white;
     font-size: 15px;
 }
-/*.typo-light h1, 
-.typo-light h2, 
-.typo-light h3,  
-.typo-light h4, 
-.typo-light h5, 
-.typo-light h6,
-.typo-light p,
-.typo-light div,
-.typo-light span,
-.typo-light small{	color: #fff;}
-*/
+
 ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
 ul.social-footer2 li {display: inline-block;padding: 0;}
 ul.social-footer2 li a:hover {background-color:#ffffff;}
