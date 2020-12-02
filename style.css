@@ -78,7 +78,7 @@ font-size: .8.5rem;
   width: 90%;
   padding: 10px;
 }
-
+/*
 footer {
    width: 100%;
     font-weight: 700;
@@ -95,6 +95,7 @@ footer img {
 .copyright{
  color:#ffffff;
 }
+*/
 .btn {
   background-color:#210F21;
   border: none;
@@ -220,6 +221,100 @@ footer img {
     border-radius: 4px;
 }
 
+
+/*footer*/
+
+footer .main-footer{	padding-top: 25px ;	background: #050606;}
+footer ul{	padding-left: 0;	list-style: none;}
+ footer li a{
+    background-color: transparent;
+    text-align: left;
+    font-size: 13px;
+    
+}
+
+/* Copy Right Footer */
+.footer-copyright {	background: #050606;	padding: 5px 0;}
+.footer-copyright .logo {    display: inherit;}
+.footer-copyright nav {    float: right;    margin-top: 5px;}
+.footer-copyright nav ul {	list-style: none;	margin: 0;	padding: 0;}
+.footer-copyright nav ul li {	border-left: 1px solid #ffffff;	display: inline-block;	line-height: 12px;	margin: 0;	padding: 0 8px;}
+.footer-copyright nav ul li a{	color: #ffffff;}
+.footer-copyright nav ul li:first-child {	border: medium none;	padding-left: 0;}
+.footer-copyright p {	color: #7c7c7c;	margin: 2px 0 0;}
+
+/* Footer Top */
+.footer-top{	background: #60d611;	padding-bottom: 30px;	margin-bottom: 30px;	border-bottom: 3px solid #222;}
+
+/* Footer transparent */
+footer.transparent .footer-top, footer.transparent .main-footer{	background: transparent;}
+footer.transparent .footer-copyright{	background: none repeat scroll 0 0 #050606 ;}
+
+/* Footer light */
+footer.light .footer-top{	background: #f9f9f9;}
+footer.light .main-footer{	background: #f9f9f9;}
+footer.light .footer-copyright{	background: none repeat scroll 0 0 rgba(255, 255, 255, 0.3) ;}
+
+/* Footer 4 */
+.footer- .logo {    display: inline-block;}
+
+/*==================== 
+    Widgets 
+====================== */
+.widget{	padding: 20px;	margin-bottom: 40px;text-align: center;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 0px;
+    box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none; }
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget li{ line-height: 80%;}
+.widget li a{	color: #707070;text-align: center; }
+.widget li a:hover{	color: #7D287D;}
+.widget-title {margin-bottom: 20px;font-size: 20px;font-weight: 600;}
+.widget-title span {background: #ffffff none repeat scroll 0 0;display: block; height: 2px;margin-top: 25px;position: relative;width: 40%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: right;	background: #ffffff;}
+footer h5{
+    color: white;
+}
+footer p{
+    color: white;
+    font-size: 15px;
+}
+/*.typo-light h1, 
+.typo-light h2, 
+.typo-light h3,  
+.typo-light h4, 
+.typo-light h5, 
+.typo-light h6,
+.typo-light p,
+.typo-light div,
+.typo-light span,
+.typo-light small{	color: #fff;}
+*/
+ul.social-footer2 {	margin: 0;padding: 0;	width: auto;}
+ul.social-footer2 li {display: inline-block;padding: 0;}
+ul.social-footer2 li a:hover {background-color:#ffffff;}
+ul.social-footer2 li a {display: block;	height:50px;width: 50px;text-align: center;}
+
+@media (min-width: 992px){
+.widget{	padding: 20px;	margin-bottom: 40px;text-align: left;}
+.widget.widget-last{	margin-bottom: 0px;}
+.widget.no-box{	padding: 0;	background-color: transparent;	margin-bottom: 0px;
+    box-shadow: none; -webkit-box-shadow: none; -moz-box-shadow: none; -ms-box-shadow: none; -o-box-shadow: none;}
+.widget.subscribe p{	margin-bottom: 18px;}
+.widget ul li{line-height: 60%;}
+.widget li a{	color: #707070;text-align: left;}
+.widget li a:hover{	color: #7D287D;}
+.widget-title {margin-bottom: 20px;font-size: 20px;font-weight: 600;}
+.widget-title span {background: #ffffff none repeat scroll 0 0;display: block; height: 2px;margin-top: 25px;position: relative;width: 40%;}
+.widget-title span::after {background: inherit;content: "";height: inherit;    position: absolute;top: -4px;width: 50%;}
+.widget-title.text-center span,.widget-title.text-center span::after {margin-left: auto;margin-right:auto;left: 0;right: 0;}
+.widget .badge{	float: left;	background: #ffffff;}
+.social{
+    float: left;
+}
+}
 
 
 
