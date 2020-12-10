@@ -9,23 +9,35 @@ body {
 
 /*---navbar--*/
 .navbar ul li ul li a{
+    display: block;
     color: rgb(10, 10, 10);
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
+    border-width: .5px;
+    border-style: solid;
+    border-color: rgba(216, 214, 214, 0.877);
 }
 .navbar ul li ul li a:hover{
-    color:#3b083b;
-    background-color: #973f9750;
-    
+    color:#ffffff;
+    background-color: #210F21;
+}
+.dropdown-menu{
+    border-radius: 0%;
+    line-height: 0%;
+    letter-spacing: .2mm;
+    text-align:left;
+    padding: 0px 0px;
+    border-width: 0mm;
     
 }
+
 .navbar {
   text-transform: uppercase;
   font-weight:600;
   padding-top: 10px;
-font-size: .9rem;
-text-align: center;
-width: 100%;
+  font-size: .9rem;
+  text-align: center;
+  width: 100%;
   letter-spacing: .1rem;
   background:white!important;
   color:black;
@@ -37,51 +49,26 @@ margin:0;
 padding:0;
 font-weight: 200px;
 text-align: center;
+height:auto;
 color:black;
 }
+
 
 li a {
 display:block;
 width:100%;
 height:50px;
 font-weight: 500;
-line-height:37px;
+line-height:40px;
 text-align: left;
 font-family:'Montserrat', sans-serif;
 color: black;
 background: rgb(255, 255, 255);
 font-size: .8.5rem;
+
 }
 
-@media (min-width: 992px){
-  .dropdown-menu .dropdown-toggle:after{
-    border-top: .3em solid transparent;
-      border-right: 0;
-      border-bottom: .3em solid transparent;
-      border-left: .3em solid;
-  }
 
-  .dropdown-menu .dropdown-menu{
-    margin-left:0; margin-right: 0;
-  }
-
-  .dropdown-menu li{
-    position: relative;
-  }
-  .nav-item .submenu{ 
-    display: none;
-    position: absolute;
-    left:100%; top:-7px;
-  }
-  .nav-item .submenu-left{ 
-    right:100%; left:auto;
-  }
-
-  .dropdown-menu > li:hover{ background-color: #f1f1f1 }
-  .dropdown-menu > li:hover > .submenu{
-    display: block;
-  }
-}
 /*nav bar end*/
 
 .center {
@@ -219,7 +206,7 @@ font-size: .8.5rem;
 .date a{
     margin: 22px 0;
     background: #210F21;
-    color: wheat;
+    color: rgb(255, 255, 255);
     border: 1px solod #210F21;
     padding: 5px 0;
     border-radius: 35px;
